@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form method="post">
+
+        <table>
+            <tr>
+                <td><label>Enter your First Name</label></td>
+                <td><input type="text" name="fname" placeholder="Enter your first name" required></td>
+            </tr>
+            <tr>
+                <td><label>Enter your Last Name</label></td>
+                <td><input type="text" name="lname" placeholder="Enter your last name"  required></td>
+            </tr>
+            <tr>
+                <td><label>Select your Gender</label></td>
+                <td>
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">Female
+                    <input type="radio" name="gender" value="other">Other
+                </td>
+            </tr>
+            <tr>
+                <td><label>Enter your Email</label></td>
+                <td><input type="email" name="email" placeholder="Enter your email" required></td>
+            </tr>
+            <tr>
+                <td><label>Enter your Contact Number</label></td>
+                <td><input type="number" name="mob" placeholder="Enter your contact number" required></td>
+            </tr>
+            <tr>
+                <td><label>Upload your Profile Picture</label></td>
+                <td><input type="file" name="picture" placeholder="Upload your profile picture" required></td>
+            </tr>
+            <tr>
+                <td><label>Enter your Date of Birth</label></td>
+                <td><input type="date" name="dob" placeholder="Enter your dob" required></td>
+            </tr>
+            <tr>
+                <td><label>Choose your Hobbies</label></td>
+                <td>
+                    <input type="checkbox" name="x[]" value="h1">Music
+                    <input type="checkbox" name="x[]" value="h2">Cricket
+                    <input type="checkbox" name="x[]" value="h3">Football
+                </td>
+            </tr>
+            <tr>
+                <td><label>Select your Subject</label></td>
+                <td>
+                    <select name="subject">
+                        <option value="default" selected="">Select your subject</option>
+                        <option value="1">PHP</option>
+                        <option value="2">HTML</option>
+                        <option value="3">CSS</option>
+                        <option value="4">JavaScript</option>
+                        <option value="5">Java</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Enter your address</label></td>
+                <td><textarea name="address" placeholder="Enter your address" required></textarea></td>
+            </tr>
+            <!-- <tr>
+                <td><label>Enter your Password</label></td>
+                <td><input type="password" name="password" placeholder="Enter your password"></td>
+            </tr> -->
+            <tr>
+                <td><button type="submit" name="login" value="save">Save Details</button></td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>
