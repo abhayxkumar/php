@@ -2,7 +2,8 @@
 
 $uname = $_POST['uname'];
 
-//create
+
+//  Create Operation
 if(isset($_POST['save']))
 {
     $connection = new mysqli("localhost", "root", "", "crud");
@@ -21,7 +22,8 @@ if(isset($_POST['save']))
 
 }
 
-//display
+
+//  Display Operation
 if(isset($_POST['display']))
 {
     $connection = new mysqli("localhost", "root", "", "crud");
@@ -61,7 +63,8 @@ if(isset($_POST['display']))
     echo "</table>";
 }
 
-//update
+
+//  Update Operation
 if(isset($_POST['update']))
 {
     $connection = new mysqli("localhost", "root", "", "crud");
@@ -85,7 +88,8 @@ if(isset($_POST['update']))
     }
 }
 
-//delete
+
+//  Delete Operation
 if(isset($_POST['delete']))
 {
     $connection = new mysqli("localhost", "root", "", "crud");
